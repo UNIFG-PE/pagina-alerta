@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Página com alerta</title>
+    </head>
+    <body>
+        <h1>Exibir texto em um alerta</h1>
+
+        <label for="texto">Digite algo:</label>
+        <input type="text" id="texto"
+        placeholder="Escreva aqui...">
+        <button onclick="mostrarAlerta()">Mostrar Alerta</button>
+
+        <script>
+            function mostrarAlerta() {
+                const campo =
+                document.getElementById("texto").value;
+                alert(campo);
+            }
+        </script>
+    </body>
+</html>
